@@ -6,7 +6,7 @@ function App() {
     const [showDialog, setShowDialog] = React.useState(false);
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
-    const cancelRef = React.useRef<HTMLButtonElement>(null);
+    const cancelRef = React.useRef<HTMLButtonElement | null>(null);
     return (<div>
         <button onClick={open}>Delete something</button>
         {showDialog && (
